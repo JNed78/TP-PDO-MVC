@@ -76,7 +76,8 @@
           <a class="dropdown-item" href="#">Liste des Auteurs</a>
           <a class="dropdown-item" href="#">Ajouter un Auteur</a>
           <a class="dropdown-item" href="#">Rechercher un Auteur</a>
-        </div>
+        </div> 
+    </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false"><i class="far fa-flag"></i> Gestion des Nationalités</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -84,6 +85,15 @@
           <a class="dropdown-item" href="formAjoutNation.php">Ajouter une Nationanlité</a>
           <a class="dropdown-item" href="#">Rechercher une Nationalité</a>
         </div>
+        </li>
+          <li class="nav-item dropdown"> 
+             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i>
+ Gestion des Continents</a>
+               <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="index.php?uc=continents&action=list">Liste des Continents</a>
+              <a class="dropdown-item" href="#">Ajouter un Continent</a>
+        </div> 
+    </li>
     </ul>
   </div>
 </nav>
