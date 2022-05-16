@@ -19,11 +19,11 @@
         foreach($lesContinents as $continent){
            echo "<tr class='d-flex'>";
            echo "<td class='col-md-2'>".$continent->getNum()."</td>";
-           echo "<td class='col-md-5'>".$continent->getLibelle()."</td>";
+           echo "<td class='col-md-8'>".$continent->getLibelle()."</td>";
            echo "<td class='col-md-2'>
-                 <a href='formNation.php?action=Modifier&num=".$continent->getNum()."' class='btn btn-primary'><i class='fas fa-pen'></i></a>
+                 <a href='index.php?uc=continents&action=update&num=".$continent->getNum()."' class='btn btn-primary'><i class='fas fa-pen'></i></a>
            
-                 <a href='#modalSupression' data-toggle='modal'  data-message='Voulez vous supprimer cette nationalité ?' data-suppression='supprimerNationalite.php?num=".$continent->getNum()."' class='btn btn-danger'><i class='far fa-trash-alt'></i></a>
+                 <a href='#modalSupression' data-toggle='modal'  data-message='Voulez vous supprimer cette nationalité ?' data-suppression='index.php?uc=continents&action=delete&num=".$continent->getNum()."' class='btn btn-danger'><i class='far fa-trash-alt'></i></a>
            </td>";
 
            echo "</tr>";
