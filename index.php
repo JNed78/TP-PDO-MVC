@@ -5,6 +5,7 @@ include ("modeles/Continent.php");
 include ("modeles/Nationalite.php");
 include ("modeles/monPdo.php");
 include ("vues/messageflash.php");
+include ("modeles/Auteur.php");
 
 
 $uc =empty($_GET['uc']) ? "accueil" : $_GET['uc'];
@@ -18,7 +19,10 @@ switch($uc){
         break;   
         case 'nationalites' :
             include('Controllers/nationaliteController.php');
-            break;   
+            break; 
+            case 'auteurs' :
+                include ('controllers/auteurController.php');
+                break;  
 }
 include "vues/footer.php";
 ?>
